@@ -1,0 +1,257 @@
+.home {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.header {
+  margin: 1vw 0 0 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header p {
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.reviews {
+  margin: 2.5vw 0 0 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 93%;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.review h3 {
+  font-size: 1.5vw;
+}
+
+.review p {
+  color: gray;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.star {
+  filter: grayscale(100%);
+}
+
+.star:hover{
+    opacity: 0.8;
+}
+
+.goldenStar {
+  filter: grayscale(0%);
+  fill: #efce4a;
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.4vw;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+.thumb {
+    filter: grayscale(100%);
+}
+
+.thumb:hover{
+    opacity: 0.8;
+}
+
+.dislike {
+    filter: grayscale(0%);
+}
+
+.like {
+    filter: grayscale(0%);
+}
+
+.facets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 2vw 0vw;
+}
+
+.unselectedFacet{
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 1vw;
+    font-size: 0.8vw;
+    background-color: lightgray;
+    cursor: pointer;
+}
+.unselectedFacet:hover{
+    opacity: 0.8;
+}
+.selectedFacet{
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 1vw;
+    font-size: 0.8vw;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.first{
+    margin-right: 3vw;
+}
+
+.feedback{
+    padding: 1vw;
+    font-size: 0.9vw;
+    width: 50%;
+    height: 10vw;
+}
+
+.publish{
+    margin: 3vw 0;
+    align-self: center;
+    width: 50%;
+    height: 3vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(176, 238, 176);
+
+}
+
+.publish:hover{
+    background-color: lightgreen;
+}
+
+.header img{
+    display: none;
+}
+
+.submitted{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 5vw;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.submitted img{
+  margin-top: 5vw;
+}
+
+@media (max-width : 480px) {
+    .header{
+        margin: 5vw 0 0 5vw;
+    }
+    .header img{
+        display: block;
+        width: 15px;
+        height: 15px;
+    }
+    .header p {
+        margin-top: 3vw;
+        font-size: 10vw;
+        font-weight: 700;
+      }
+      .reviews {
+        margin: 10vw 0 0 5vw;
+        gap: 10vw;
+        width: 95%;
+      }
+      .reviewText{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+      }
+      .review {
+        flex-direction: column;
+        width: 100%;
+        gap: 4vw;
+      }
+      .review h3 {
+        font-size: 6vw;
+      }
+      .stars{
+        gap: 3vw;
+      }
+      .star{
+        width: 45px;
+        height: 45px;
+      }
+      .goldenStar{
+        width: 45px;
+        height: 45px;
+      }
+
+      .likes p{
+        font-size: 4vw;
+        margin-left: 2vw;
+      }
+      .likes img{
+        width: 60px;
+        height: 60px;
+      }
+      .first{
+        margin-right: 10vw;
+      }
+      .facets{
+        width: 92%;
+        gap: 3vw;
+      }
+      .unselectedFacet{
+        padding: 2vw 5vw 2vw 5vw;
+        border-radius: 5vw;
+        font-size: 3.5vw;
+      }
+      .selectedFacet{
+        padding: 2vw 5vw 2vw 5vw;
+        border-radius: 5vw;
+        font-size: 3.5vw;
+      }
+      .feedback{
+        width: 88%;
+        height: 80vw;
+        font-size: 4vw;
+        padding: 3vw;
+        border-radius: 2vw;
+      }
+
+      .publish{
+        margin: 8vw 0;
+        width: 92%;
+        height: 12vw;
+        font-size: 3.7vw;
+        border-radius: 2vw;
+      }
+      .submitted p{
+        font-size: 15vw;
+        margin-left: 5vw;
+      }
+      .submitted img{
+        margin-top: 20vw;
+        width: 300px;
+        height: 150px;
+      }
+}
