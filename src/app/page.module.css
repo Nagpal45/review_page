@@ -161,7 +161,7 @@
   margin-top: 5vw;
 }
 
-@media (max-width : 480px) {
+@media (max-width : 768px) {
     .header{
         margin: 5vw 0 0 5vw;
     }
